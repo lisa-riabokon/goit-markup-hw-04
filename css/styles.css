@@ -168,7 +168,19 @@ body {
 
 .hero {
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--footer-bg-color);
+  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -228,6 +240,33 @@ body {
 .features-list {
   display: flex;
   gap: 30px;
+}
+
+.item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url();
+}
+
+.icon-watch::before {
+  background-image: url();
+}
+
+.icon-schedule::before {
+  background-image: url();
+}
+
+.icon-astronaut::before {
+  background-image: url();
 }
 
 .features-list .item {
