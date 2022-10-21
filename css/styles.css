@@ -176,7 +176,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bg-color);
-  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -341,7 +341,7 @@ body {
 .function {
   font-size: 16px;
   line-height: 1.19;
-
+  margin-bottom: 16px;
   text-align: center;
 
   color: var(--secondary-text-color);
@@ -350,6 +350,44 @@ body {
 .worker-card {
   background-color: var(--white-color);
 }
+
+.workers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.workers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.workers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+  border-radius: 50%;
+  display: block;
+}
+
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-icon {
+  width: calc(100% - 150px) / 6;
+  height: 90px;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: block;
+}
+
 /* --------FOOTER------------ */
 
 .footer-logo {
