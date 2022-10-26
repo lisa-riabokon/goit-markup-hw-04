@@ -439,12 +439,19 @@ body {
 
 .footer-title {
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  color: var(--white-color);
 }
 
 .footer-wrap {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+
+.footer-sicial {
+  margin-left: 70px;
 }
 /* -------css for portfolio.html------------- */
 
@@ -478,15 +485,6 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.footer-title {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--white-color);
 }
 
 .footer-soc-list {
@@ -553,8 +551,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.portfolio-link:hover {
+.portfolio-link {
   display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
